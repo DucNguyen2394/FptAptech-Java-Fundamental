@@ -21,24 +21,18 @@ public class MoveablePoint implements Moveable {
 		this.xSpeed = xSpeed;
 		this.ySpeed = ySpeed;
 	}
-
-
-	@Override
 	public void moveUp() {
 		y++;
 	}
 
-	@Override
 	public void moveDown() {
 		y--;
 	}
 
-	@Override
 	public void moveLeft() {
 		x--;
 	}
 
-	@Override
 	public void moveRight() {
 		x++;
 	}
@@ -83,7 +77,6 @@ public class MoveablePoint implements Moveable {
 		y = scan.nextInt();
 	}
 
-	@Override
 	public String toString() {
 		return "MoveablePoint [x=" + x + ", y=" + y + "]";
 	}

@@ -5,8 +5,6 @@ public class MoveableCircle extends MoveablePoint implements Moveable {
 	int radius;
 	MoveablePoint center;
 	
-	
-	
 	public MoveableCircle(int radius, MoveablePoint center,int x,int y,int xSpeed, int ySpeed) {
 		super();
 		this.radius = radius;
