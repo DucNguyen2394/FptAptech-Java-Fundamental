@@ -11,7 +11,7 @@ public class Bank {
 		
 	}
 	
-	public Bank(String bankId, String bankName, String branch) {
+	public Bank(String bankId, String bankName, String branch,double amount) {
 		super();
 		this.bankId = bankId;
 		BankName = bankName;
@@ -53,18 +53,15 @@ public class Bank {
 	public void withdraw(Account account){
 		try{
 			double amount;
-			boolean check;
 			System.out.println("Enter your amount to withdrawal: ");
 			amount = Double.parseDouble(scan.nextLine());
-			if(amount <= account.getBalance()){
-				check = true;
-				account.setBalance(account.getBalance() - amount) ;
-				System.out.println("Successfully!");
-			}else{				
-				throw new MyException(account);
+			if(amount > account.getBalance()){				
+				throw new MyException(amount, account.getBalance() ,"withdrawal amount exceeds balance");
 			}
+			account.setBalance(account.getBalance() - amount) ;
+			System.out.println("Successfully!");
 		}catch(MyException e){
-			System.out.println("Invaid!!!");
+			
 		}catch(NumberFormatException e){
 			System.out.println("money not String");
 		}

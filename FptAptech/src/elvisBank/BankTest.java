@@ -49,23 +49,4 @@ public class BankTest {
 		System.out.println("3. Withdraw:  ");
 	}
 	
-//	public static void trycatch(){
-//		try{
-//			int[] list = new int[3];
-//			list[0] = 5;
-//			list[2] = 8;
-//			list[8] = list[2] / list[0];
-//			try{
-//				int a = 50,b = 0;
-//				int result = a/b;
-//			}catch(ArithmeticException ex){
-//				System.out.println("ko the chia cho 0");
-//			}
-//		}catch(ArrayIndexOutOfBoundsException ex){
-//			System.out.println("vuot qua kich thuoc mang");
-//		}catch(Exception ex){
-//			System.out.println("ko phat hien dc loi");
-//		}
-//	}
 }
-

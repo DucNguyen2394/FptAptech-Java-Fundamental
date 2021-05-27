@@ -3,9 +3,11 @@ package elvisBank;
 import java.util.Scanner;
 
 public class MyException extends Exception {
-	static Scanner scan = new Scanner(System.in); 
-
-	public MyException(Account account){
-		
+	
+	public MyException(double amount,double balance,String s){
+		if(amount > balance){
+			System.out.println(s);
+		}
 	}
+	
 }
