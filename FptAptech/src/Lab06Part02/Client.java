@@ -24,12 +24,13 @@ public class Client {
 		}
 	
 	private int canThrowCheckedException() throws Exception{
-		throw new Exception("Failure");
+			throw new Exception("Failure");
 		}
 	
 	
 	public static void main(String[] args){
 		Client c = new Client();
+		
 	}
 	
 	// 1. Distinguishing unchecked Checked Exception and Exception:

@@ -14,5 +14,5 @@ public class MoreClass {
 	}
 	// Why System.out.println(obj1); could be displayed?
 	// obj1 in ra địa chỉ của obj1.
-	// ubj 2 in ra kết quả được return trong phương thức toString.
+	// obj 2 in ra kết quả được return trong phương thức toString.
 }
